@@ -1,0 +1,5 @@
+#define isUpper(c) ( ((c) >= 'A' && (c) <= 'Z' ) ? 1 : 0 )
+#define isLower(c) ( ((c) >= 'a' && (c) <= 'z' ) ? 1 : 0 )
+#define isAlpha(c) ( (isUpper((c)) || isLower((c)) ? 1 : 0) )
+#define isDigit(c) ( ((c) >= '0' && (c) <= '9' ) ? 1 : 0)
+#define isSpecial(c) ( (isAlpha((c)) || isDigit((c)) ) ? 0 : 1 )
